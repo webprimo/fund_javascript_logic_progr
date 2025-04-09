@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+
+/* serve para criar comentaios no css */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-color: rgb(119, 95, 95);
+     font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    color: blue;
+    text-align: center;
+    margin-top: 7px;
+}
+
+h2{
+    color: rgb(5, 255, 247);
+    text-align: center;
+}
+p{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+    border: solid rgb(0, 0, 0);
+}
+
+#tubarão{
+    text-align: center;
+    color: rgb(255, 8, 8);
+}
+
+#latrel{
+    text-align: justify;
+    color: yellowgreen;
+}
+
+#aiii_Nobru_vazio_apelão{
+   text-align: center;
+   color: rgb(0, 204, 255);
+}
+
+#Poly_pocket{
+    text-align: center;
+}
