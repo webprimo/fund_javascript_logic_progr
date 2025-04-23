@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+      
+        @charset "utf-08";
+    
+            :root{
+            --fundo-claro:#ffffff;
+            --fundo-escuro:#000000;
+            --botao-primario:#7d1ad4;
+            --botao-primario-hover:#0091ff;
+            --texto-claro: #000
+             /*Adicionar esta variavel para o texto no tema claro  */
+             --texto-escuro: #fff
+             /* adicionaresta variavel para o texto no tema escuro */
+          }      
+          
+         [´data-theme="dark"] {
+            --fundo-claro:#000 
+            --fundo-escuro: #fff
+            --fundo-claro: #fff
+            --texto_escuro:#000 
+         }
+
+         *{
+            margin: 0;
+            padding: 0;
+         }
+
+         body {
+            background-color: var(--fundo-claro);
+            color: var(--texto-claro);
+            /* adicione esta linha */
+            min-height: 100hv;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+         div {
+            background-color: var(--fundo-escuro);
+            color: var(--texto-ecuro);
+            /* adicione esta linha */
+            display: flex;
+            flex-direction: column;
+            gab:2rem;
+            align-items: center;
+            padding: 2rem;
+            border-radius: 0.9rem;
+         }
+         
+         button {
+            background-color: var(--botao-primario);
+            color: var(--texto-ecuro);
+            /* adicione esta linha */
+            padding: 0,4rem;
+            border: none;
+            border-radius: 50%;
+            width: 80px;
+            height: 80%;
+            cursor: pointer; 
+        
+        }
+        
+    button:hover{
+        background-color: var(--botao-primario-hover);
+        transition: 0,8s;
+    }
+    </style>
+
+    <head></head>
+       
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        // verifica se o tema atual é 'light'.
+        if (theme ==="light") {
+            //se for 'light', define um conteudo inteiro do botao com o SVG do modo escuro.
+            // isoo sugere que o botão, ao estar no tema claro, tera um icone, para ativar o modo escuro.
+            btnDarkMode.innerHTML = darkSvg;
+            return; //sai da função apos definir o icone.
+        
+
+            // se o tema na for 'light' (implica que é 'dark' nesse caso),
+            // define o conteudo interno do botão com SVG do modo claro.
+            // isso sugere que o botão, ao estar no tema escuro, tera um icone para ativar o modo claro.
+            bntDarkMode.innerHTML = lightSvg;
+        }
+
+        //cahma a função 'defineCurrentTheme' iniciamente com o tema obtido do 'localStrorage'
+        //(ou 'light' se nenhum tema estiver salvo). isoo garante que o tema correto seja aplicado
+        //quando a pagina carrega.
+        defineCurrentTheme(themeSystem);
+    </style>
+</body>
+</html>
